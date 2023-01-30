@@ -23,3 +23,19 @@ Essa clase irá enviar a mensagem para o modelo treinado em python.
 ![exemploMsgNeg](https://user-images.githubusercontent.com/48891644/213894100-dc529ac6-e9ee-43fc-84a8-7faedffe90b9.PNG)    
 
 ![exemploMsgPos](https://user-images.githubusercontent.com/48891644/213894150-1d037846-838e-4eed-9fb9-96693ff54aa3.PNG)
+
+
+## Instalação
+Para instalar o programa é necessário:   
+1 - Ter um número cadastrado na twilio  
+2 - Baixar o programa e rodar 'yarn'   
+3 - Criar um arquivo .env   
+4 - Nesse arquivo colocar ACCOUNT_SID e AUTH_TOKEN (Informações disponiveis na conta da twilio)   
+5 - Ter ngrok instalado na máquina   
+
+## Execução   
+Para rodaré necessário:  
+1 - Rodar yarn dev (ou npm dependendo da preferência)   
+2 - Rodar ngrok http 3333 (o número da porta que está sendo usada)  
+3 - Pegar o endereço do ngrok e colocar no endpoint da twilio nessa forma [ngro.com/whatsapp]   
+4 - A partir disso é possível conversar no seu número cadastrado.   
