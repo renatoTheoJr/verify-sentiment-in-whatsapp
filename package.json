@@ -7,7 +7,7 @@
   "author": "renatoTheoJr <renatotheojunior@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "dev": "ts-node-dev server.ts"
+    "dev": "ts-node-dev src/shared/infra/http/server.ts"
   },
   "dependencies": {
     "body-parser": "^1.20.1",
