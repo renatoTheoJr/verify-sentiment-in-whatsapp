@@ -1,15 +1,13 @@
 import {v4 as uuidv4} from "uuid"
-interface Message{
-    text: string;
-    send_by: string;
-}
+import { Message } from "./Message";
+
 class Chat{
-    id: string;
-    created_at: Date;
+    id?: string;
+    created_at?: Date;
     update_at?: Date;
     messages: Message[];
     phone?: string;
-    finisih: boolean;
+    finisih?: boolean;
 
     constructor() {
         if (!this.id) {

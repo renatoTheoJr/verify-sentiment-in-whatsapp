@@ -1,6 +1,6 @@
 interface ICreateChatDTO{
     id?: string;
-    message: string;
+    text: string;
     send_by: string;
     phone?: string;
 }
