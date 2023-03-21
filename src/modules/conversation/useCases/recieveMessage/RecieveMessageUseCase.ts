@@ -12,7 +12,7 @@ class RecieveMessageUseCase{
         private chatsRepository: IChatRepository
     ){}
     execute({text, send_by, phone}: IRequest): String{
-        console.log("aaaaaa");
+        console.log("text: " + text, "send_by " + send_by, "phone " + phone)
         const chat = this.chatsRepository.findOpenByPhone(phone)
         if(!chat ){
             const message = this.chatsRepository.create({send_by, text, phone});
